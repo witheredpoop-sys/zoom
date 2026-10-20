@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zoom — the Minecraft client that keeps up</title>
+  <meta name="description" content="Zoom is a Fabric client for Minecraft 1.21.11 with combat, movement, render and DonutSMP tools. One menu, one payment, no 1.8 build.">
+  <meta name="theme-color" content="#05070a">
+  <meta property="og:title" content="Zoom — the Minecraft client that keeps up">
+  <meta property="og:description" content="Combat, movement, render and DonutSMP tools for Minecraft 1.21.11. Built to feel native.">
+  <meta property="og:image" content="assets/screenshots/gui-combat.webp">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Zoom home">
+        <img src="assets/logo.png" alt="" width="30" height="30">
+        zoom<em>.</em>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="features.html">Features</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn--primary btn--sm" href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener" data-magnetic>
+          Buy now
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+      <a href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener">Discord</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/screenshots/hero-menu.webp" alt="" width="1920" height="1080">
+      </div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <span class="eyebrow">Minecraft 1.21.11 · Fabric</span>
+          <h1 id="hero-title">
+            <span class="line"><span>Every frame.</span></span>
+            <span class="line"><span class="gradient-text">Every fight.</span></span>
+          </h1>
+          <p class="hero__sub">
+            Zoom is a Fabric client for Minecraft 1.21.11. Combat, movement,
+            render and DonutSMP tools in one fast menu that feels native — and
+            gets out of your way when the fight starts.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener" data-magnetic>
+              Buy now in Discord
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#features">
+              See what it does
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+            </a>
+          </div>
+          <div class="hero__note">
+            <span>Windows</span>
+            <span>1.21.11 only</span>
+            <span>No 1.8 build</span>
+            <span>Lifetime licence</span>
+          </div>
+        </div>
+
+        <div class="hero__chips" aria-hidden="true">
+          <span>Target HUD</span>
+          <span>Aim Assist</span>
+          <span>Jump Reset</span>
+          <span>Auto Tool</span>
+          <span>Sprint</span>
+          <span>Motion Blur</span>
+        </div>
+
+        <div class="hero__bottom">
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <strong data-count="84" data-suffix="+">84+</strong>
+              <span>Modules</span>
+            </div>
+            <div class="hero__stat">
+              <strong>1.21.11</strong>
+              <span>Fabric build</span>
+            </div>
+            <div class="hero__stat">
+              <strong>Right shift</strong>
+              <span>Open menu</span>
+            </div>
+            <div class="hero__stat">
+              <strong>One payment</strong>
+              <span>No subscription</span>
+            </div>
+          </div>
+          <a class="scroll-cue" href="#features">
+            Scroll to explore
+            <i>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 4v16M6 14l6 6 6-6"/></svg>
+            </i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span class="ticker__item">Anti-Vanish</span>
+        <span class="ticker__item">AutoBuilder</span>
+        <span class="ticker__item">Mace Swap</span>
+        <span class="ticker__item">Region Map</span>
+        <span class="ticker__item">Chams</span>
+        <span class="ticker__item">Click TP</span>
+        <span class="ticker__item">Auto Cart</span>
+        <span class="ticker__item">Post FX</span>
+        <span class="ticker__item">Netherite Finder</span>
+        <span class="ticker__item">Capes</span>
+        <span class="ticker__item">Trigger Bot</span>
+        <span class="ticker__item">Motion Blur</span>
+        <span class="ticker__item">Shield Breaker</span>
+        <span class="ticker__item">Item ESP</span>
+      </div>
+    </div>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Built in</span>
+            <h2 data-reveal>Everything you need.<br><span class="muted">Nothing you don't.</span></h2>
+          </div>
+          <p data-reveal>
+            A tight module set tuned for the way people actually play:
+            fast fights, clean movement, readable renders and the DonutSMP
+            tools that save hours.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="card" data-reveal>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            <h3>Combat</h3>
+            <p>Mace Swap, Shield Breaker, Auto Cart, Trigger Bot and Aim Assist, built to read the fight instead of fighting you.</p>
+            <div class="card__tags">
+              <span class="tag">Mace Swap</span>
+              <span class="tag">Anchor Macro</span>
+              <span class="tag">Auto Crystal</span>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 19 19 5M9 5h10v10"/></svg>
+            </div>
+            <h3>Movement</h3>
+            <p>Fly, Sprint, Jump Reset and Click TP with clean bypasses and no rubber-banding theatre when the server checks in.</p>
+            <div class="card__tags">
+              <span class="tag">Fly</span>
+              <span class="tag">Click TP</span>
+              <span class="tag">Jump Reset</span>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.6"/></svg>
+            </div>
+            <h3>Render</h3>
+            <p>Chams, ESP, Nametags, Item Tags, Motion Blur, Post FX and Capes, all with settings that do something.</p>
+            <div class="card__tags">
+              <span class="tag">Chams</span>
+              <span class="tag">Player ESP</span>
+              <span class="tag">Post FX</span>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m9 3 6 3-6 3 6 3-6 3 6 3"/><path d="M4 3v18"/></svg>
+            </div>
+            <h3>DonutSMP</h3>
+            <p>Chunk Finder, Netherite Finder, Region Map, Anti Trap and the scoreboard tools made for the server you actually queue.</p>
+            <div class="card__tags">
+              <span class="tag">Chunk Finder</span>
+              <span class="tag">Region Map</span>
+              <span class="tag">Anti Trap</span>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3"/><circle cx="12" cy="12" r="2.4" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3>Anti-Vanish</h3>
+            <p>TAB removals, spectator switches, invisibility metadata and ghost sounds cross-checked into one scored alert.</p>
+            <div class="card__tags">
+              <span class="tag">Staff alerts</span>
+              <span class="tag">Sound sensors</span>
+              <span class="tag">HUD</span>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 17.5h7M17.5 14v7"/></svg>
+            </div>
+            <h3>AutoBuilder</h3>
+            <p>Drop a schematic, pick a spot, and let pathing, placement and cleanup do the repetitive part for you.</p>
+            <div class="card__tags">
+              <span class="tag">Schematics</span>
+              <span class="tag">Pathing</span>
+              <span class="tag">Auto cleanup</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="stat-band" data-reveal>
+          <div>
+            <strong data-count="84" data-suffix="+">84+</strong>
+            <span>Modules</span>
+          </div>
+          <div>
+            <strong>1.21.11</strong>
+            <span>One target version</span>
+          </div>
+          <div>
+            <strong>60 FPS</strong>
+            <span>UI that stays smooth</span>
+          </div>
+          <div>
+            <strong>0</strong>
+            <span>1.8 builds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div class="split__copy" data-reveal="left">
+          <span class="eyebrow">Made for the server</span>
+          <h2>Built around DonutSMP.</h2>
+          <p>
+            The Donut tab is not a reskinned pile of generic modules. It knows
+            the shards, the scoreboard, the economy and the way staff move.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>
+              Chunk Finder and Netherite Finder with live chunk states.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>
+              Region Map with shard boundaries and your exact position.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>
+              Anti Trap, Player Bypass and the OG scoreboard rebuilt.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>
+              Anti-Vanish keeps watching when a staff member drops off TAB.
+            </li>
+          </ul>
+        </div>
+        <div class="split__media" data-reveal="scale">
+          <div class="shot-frame" data-tilt="5" data-parallax="0.04">
+            <img src="assets/screenshots/gui-donut.webp" alt="Zoom client Donut tab showing Chunk Finder, Netherite Finder, Region Map and Anti Vanish modules" loading="lazy" width="1920" height="1080">
+          </div>
+          <div class="float-tag float-tag--a"><i></i> 84 modules loaded</div>
+          <div class="float-tag float-tag--b"><i></i> Donut tools, one tab</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split split--reverse">
+        <div class="split__copy" data-reveal="left">
+          <span class="eyebrow">The interface</span>
+          <h2>A menu that moves with you.</h2>
+          <p>
+            Open it with right shift. Search a module, flip a toggle, open a
+            setting — every action has weight, sound and a clean exit. The
+            menu is fast because it is built from the same primitives as the
+            game, not a browser in a box.
+          </p>
+          <ul class="feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>
+              Live search with keyboard-first navigation.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>
+              Six palettes, UI sounds and menu ambience.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>
+              Every module has real settings, not placeholder rows.
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>
+              In-game HUD and click GUI share the same theme.
+            </li>
+          </ul>
+          <a class="btn btn--ghost" href="features.html" style="margin-top: 30px">
+            Explore every feature
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="split__media" data-reveal="scale">
+          <div class="shot-frame" data-tilt="5" data-parallax="0.04">
+            <img src="assets/screenshots/gui-render.webp" alt="Zoom client Render tab with Player ESP, Chams, Motion Blur and Post FX modules" loading="lazy" width="1920" height="1080">
+          </div>
+          <div class="float-tag float-tag--a"><i></i> Render · 26 modules</div>
+          <div class="float-tag float-tag--b"><i></i> Search + keybinds</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>How you get in</span>
+            <h2 data-reveal>Three steps.<br><span class="muted">No maze.</span></h2>
+          </div>
+          <p data-reveal>
+            Licences are sold through Discord so you can talk to a person
+            before you pay. Join, open a ticket, and get set up.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step" data-reveal>
+            <div class="step__num"><span>STEP 01</span><strong>01</strong></div>
+            <h3>Join the Discord</h3>
+            <p>Come into the community, read the latest info and open a ticket when you are ready.</p>
+          </article>
+          <article class="step" data-reveal>
+            <div class="step__num"><span>STEP 02</span><strong>02</strong></div>
+            <h3>Get your licence</h3>
+            <p>Pick your licence in the ticket, pay once and receive your key. No subscription, no renewal date.</p>
+          </article>
+          <article class="step" data-reveal>
+            <div class="step__num"><span>STEP 03</span><strong>03</strong></div>
+            <h3>Launch and press right shift</h3>
+            <p>Sign in to the Zoom launcher, start Minecraft 1.21.11 and open the menu in game.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="price-grid">
+          <div class="price-card" data-reveal>
+            <span class="price-card__badge">Lifetime · one payment</span>
+            <h3>Zoom Client</h3>
+            <p>One licence for the 1.21.11 client, the launcher and every module.</p>
+            <div class="price-card__price">
+              <strong>Discord</strong>
+              <span>price in ticket</span>
+            </div>
+            <p>We keep pricing in Discord so you always get the current terms and a real person to ask.</p>
+            <a class="btn btn--primary btn--wide" href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener" data-magnetic>
+              Buy now in Discord
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <ul class="price-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>84+ modules across combat, movement, render and Donut.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Windows launcher with Microsoft sign-in.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Minecraft 1.21.11 Fabric only — no 1.8 build.</li>
+            </ul>
+          </div>
+          <div class="price-aside">
+            <div class="info-card" data-reveal>
+              <h4>Try before you decide?</h4>
+              <p>Ask in the Discord. The team can answer version, setup and licence questions before you open a ticket.</p>
+            </div>
+            <div class="info-card" data-reveal>
+              <h4>What you need</h4>
+              <p>Windows 10 or 11, a Microsoft account for Minecraft, and Fabric 1.21.11. The launcher handles the rest.</p>
+            </div>
+            <div class="info-card" data-reveal>
+              <h4>No 1.8. Ever.</h4>
+              <p>Zoom is built for 1.21.11. There is no 1.8.9 client, no legacy branch and no plan to add one.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Before you ask</span>
+            <h2 data-reveal>Questions,<br><span class="muted">answered.</span></h2>
+          </div>
+          <p data-reveal>Still unsure? The Discord is the fastest way to get a real answer. <a href="faq.html" style="color: var(--mint)">Read the full FAQ</a>.</p>
+        </div>
+        <div class="faq-list" data-reveal>
+          <div class="faq-item is-open">
+            <button class="faq-q" type="button" aria-expanded="true">Which Minecraft version does Zoom run on?<i></i></button>
+            <div class="faq-a"><div><p>Zoom is built for Minecraft 1.21.11 on Fabric. That is the only supported version. There is no 1.8 version of the client.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">How do I buy a licence?<i></i></button>
+            <div class="faq-a"><div><p>Join the Discord and open a ticket. You will get the current price, payment details and a key that you redeem in the launcher.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">Is it a subscription?<i></i></button>
+            <div class="faq-a"><div><p>No. A licence is a one-time payment. You are not billed monthly and there is no renewal date.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap cta-band__inner">
+        <div data-reveal>
+          <span class="eyebrow">Ready when you are</span>
+          <h2>One menu. One payment.<br><span class="gradient-text">No 1.8 build.</span></h2>
+          <p>Join the Discord, open a ticket and get your licence. The client is waiting on 1.21.11.</p>
+        </div>
+        <div class="cta-band__actions" data-reveal>
+          <a class="btn btn--primary" href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener">
+            Buy now in Discord
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="gallery.html">Browse the gallery</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/logo.png" alt="" width="30" height="30">
+            zoom<em>.</em>
+          </a>
+          <p>A Fabric client for Minecraft 1.21.11. Combat, movement, render and DonutSMP tools in one place.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Client</h5>
+          <a href="features.html">Features</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <h5>Support</h5>
+          <a href="faq.html">FAQ</a>
+          <a href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener">Discord</a>
+        </div>
+        <div class="footer-col">
+          <h5>Version</h5>
+          <a href="faq.html">1.21.11 only</a>
+          <a href="faq.html">No 1.8 build</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Zoom. All rights reserved.</span>
+        <span class="disclaimer">Not affiliated with Mojang, Microsoft or DonutSMP. Minecraft is a trademark of Mojang AB.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

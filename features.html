@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features — Zoom</title>
+  <meta name="description" content="Combat, movement, render, DonutSMP, anti-vanish and AutoBuilder features in the Zoom client for Minecraft 1.21.11.">
+  <meta name="theme-color" content="#05070a">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Zoom home">
+        <img src="assets/logo.png" alt="" width="30" height="30">
+        zoom<em>.</em>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="features.html" aria-current="page">Features</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn--primary btn--sm" href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener" data-magnetic>
+          Buy now
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+      <a href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener">Discord</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Features</span>
+        <h1 data-reveal>Every tool.<br><span class="gradient-text">One menu.</span></h1>
+        <p data-reveal>
+          Zoom is deliberately broad but never noisy. Each tab has a job, each
+          module has real settings, and everything is one right shift away.
+        </p>
+        <span class="page-hero__note" data-reveal><b>84+</b> modules · <b>1.21.11</b> only · no 1.8 build</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div class="split__copy" data-reveal="left">
+          <span class="eyebrow">01 · Combat</span>
+          <h2>Read the fight.<br>Win the trade.</h2>
+          <p>
+            Combat modules are built around timing instead of spam. Swap to a
+            mace for the hit, break a shield at the right tick, place a cart
+            where the target will land.
+          </p>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Mace Swap, Shield Breaker, Double Anchor and Anchor Macro.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Trigger Bot, Aim Assist and HitBox controls that stay readable.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Auto Cart, Auto Crystal and Auto Web with placement gates.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Auto Totem, Hover Totem and inventory totem handling.</li>
+          </ul>
+        </div>
+        <div class="split__media" data-reveal="scale">
+          <div class="shot-frame" data-tilt="5" data-parallax="0.04">
+            <img src="assets/screenshots/gui-combat.webp" alt="Zoom Combat tab with Mace Swap, HitBox, Static HitBoxes, Anchor Macro and Trigger Bot" loading="lazy" width="1920" height="1080">
+          </div>
+          <div class="float-tag float-tag--a"><i></i> 16 combat modules</div>
+          <div class="float-tag float-tag--b"><i></i> Real settings, not placeholders</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split split--reverse">
+        <div class="split__copy" data-reveal="left">
+          <span class="eyebrow">02 · Movement</span>
+          <h2>Move clean.<br>Land first.</h2>
+          <p>
+            Movement should feel like an extension of the keyboard, not a
+            fight with the server. Zoom keeps the inputs light and the checks
+            honest.
+          </p>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Fly with vertical control and a speed you can actually steer.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Click TP and route helpers for recovering a position.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Sprint and Jump Reset tuned for modern hit registration.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Scaffold, Elytra Swap and movement coordination that share state.</li>
+          </ul>
+        </div>
+        <div class="split__media" data-reveal="scale">
+          <div class="shot-frame" data-tilt="5" data-parallax="0.04">
+            <img src="assets/screenshots/ingame-island.webp" alt="Zoom client running in Minecraft 1.21.11 at sunset over a practice map" loading="lazy" width="1920" height="1080">
+          </div>
+          <div class="float-tag float-tag--a"><i></i> 1.21.11 · Fabric</div>
+          <div class="float-tag float-tag--b"><i></i> Right shift to open</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div class="split__copy" data-reveal="left">
+          <span class="eyebrow">03 · Render</span>
+          <h2>See more.<br>Guess less.</h2>
+          <p>
+            Renders should give you information, not a screensaver. ESP, Chams
+            and tags are layered so the important thing is always the brightest
+            thing on screen.
+          </p>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Player ESP, Storage ESP, Block ESP and Item ESP.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Chams, Nametags, Target HUD and Item Tags.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Post FX, Motion Blur, Jump Circles and custom skies.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Capes, skins and name protection that stay local.</li>
+          </ul>
+        </div>
+        <div class="split__media" data-reveal="scale">
+          <div class="shot-frame" data-tilt="5" data-parallax="0.04">
+            <img src="assets/screenshots/gui-render.webp" alt="Zoom Render tab with Player ESP, Chams, Motion Blur, Post FX and Capes" loading="lazy" width="1920" height="1080">
+          </div>
+          <div class="float-tag float-tag--a"><i></i> 26 render modules</div>
+          <div class="float-tag float-tag--b"><i></i> Every option has a purpose</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split split--reverse">
+        <div class="split__copy" data-reveal="left">
+          <span class="eyebrow">04 · DonutSMP</span>
+          <h2>The server,<br>understood.</h2>
+          <p>
+            The Donut tab knows the map, the shards and the economy UI. It is
+            the difference between a client that runs on DonutSMP and one that
+            was built for it.
+          </p>
+          <ul class="feature-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Chunk Finder, Sus Chunk Finder and Prime Chunk Finder.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Netherite Finder, Tunnel Base Finder and RTP Base Finder.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Region Map, scoreboard tools and auction helpers.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Anti-Vanish, Fake Item and Player Bypass.</li>
+          </ul>
+        </div>
+        <div class="split__media" data-reveal="scale">
+          <div class="shot-frame" data-tilt="5" data-parallax="0.04">
+            <img src="assets/screenshots/gui-donut.webp" alt="Zoom Donut tab with Chunk Finder, Netherite Finder, Region Map, Anti Trap and Anti Vanish" loading="lazy" width="1920" height="1080">
+          </div>
+          <div class="float-tag float-tag--a"><i></i> 44 Donut modules</div>
+          <div class="float-tag float-tag--b"><i></i> Built for the shard</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>The details</span>
+            <h2 data-reveal>Small things.<br><span class="muted">Big difference.</span></h2>
+          </div>
+          <p data-reveal>
+            The parts you notice after an hour, not in a feature list. These are
+            the reasons the menu feels like it belongs in the game.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="card" data-reveal>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M17 9a4 4 0 0 1 0 6"/></svg></div>
+            <h3>Sound design</h3>
+            <p>Soft clicks, toggles and menu ambience with independent volume. Silence it all in one switch.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l6 4"/></svg></div>
+            <h3>Six palettes</h3>
+            <p>Water, ice, violet and more. The click GUI, HUD and launcher share the same palette.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m16 16 4 4"/></svg></div>
+            <h3>Instant search</h3>
+            <p>Type a module name and the whole client narrows down. Ctrl + F gets you there from anywhere.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+            <h3>Launcher</h3>
+            <p>Microsoft sign-in, version picker, memory slider and a socials tab that opens the community.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+            <h3>Profiles</h3>
+            <p>Settings persist per install and survive rebuilds. Your binds and toggles are where you left them.</p>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3 4 7v5c0 5 3.4 8 8 9 4.6-1 8-4 8-9V7l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Licence built in</h3>
+            <p>Signed grants, device checks and offline verification. Your client stays yours.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap cta-band__inner">
+        <div data-reveal>
+          <span class="eyebrow">The whole thing</span>
+          <h2>See it before<br><span class="gradient-text">you buy it.</span></h2>
+          <p>Real screenshots from the client, running on 1.21.11. No mockups, no 1.8.</p>
+        </div>
+        <div class="cta-band__actions" data-reveal>
+          <a class="btn btn--primary" href="gallery.html">Open the gallery</a>
+          <a class="btn btn--ghost" href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener">Buy now in Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><img src="assets/logo.png" alt="" width="30" height="30">zoom<em>.</em></a>
+          <p>A Fabric client for Minecraft 1.21.11. Combat, movement, render and DonutSMP tools in one place.</p>
+        </div>
+        <div class="footer-col"><h5>Client</h5><a href="features.html">Features</a><a href="gallery.html">Gallery</a><a href="pricing.html">Pricing</a></div>
+        <div class="footer-col"><h5>Support</h5><a href="faq.html">FAQ</a><a href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener">Discord</a></div>
+        <div class="footer-col"><h5>Version</h5><a href="faq.html">1.21.11 only</a><a href="faq.html">No 1.8 build</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Zoom. All rights reserved.</span>
+        <span class="disclaimer">Not affiliated with Mojang, Microsoft or DonutSMP. Minecraft is a trademark of Mojang AB.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

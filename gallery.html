@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Zoom</title>
+  <meta name="description" content="Real screenshots of the Zoom client for Minecraft 1.21.11: combat, render, DonutSMP and in-game HUD.">
+  <meta name="theme-color" content="#05070a">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Zoom home"><img src="assets/logo.png" alt="" width="30" height="30">zoom<em>.</em></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="features.html">Features</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn--primary btn--sm" href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener" data-magnetic>
+          Buy now
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="index.html">Home</a><a href="features.html">Features</a><a href="gallery.html">Gallery</a><a href="pricing.html">Pricing</a><a href="faq.html">FAQ</a><a href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener">Discord</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Gallery</span>
+        <h1 data-reveal>No mockups.<br><span class="gradient-text">Just the client.</span></h1>
+        <p data-reveal>
+          Every image below was captured inside Zoom on Minecraft 1.21.11.
+          Click one to open it full screen, then use the arrow keys.
+        </p>
+        <span class="page-hero__note" data-reveal><b>Live captures</b> · 1920 × 1080 · in-game</span>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap">
+        <div class="filters" data-reveal>
+          <button class="filter is-active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="menu">Menu</button>
+          <button class="filter" type="button" data-filter="render">Render</button>
+          <button class="filter" type="button" data-filter="donut">Donut</button>
+          <button class="filter" type="button" data-filter="ingame">In-game</button>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-item--wide" data-tags="menu" data-title="Combat tab — the Zoom click GUI" data-reveal="scale">
+            <img src="assets/screenshots/gui-combat.webp" alt="Zoom click GUI on the Combat tab with Mace Swap, HitBox, Static HitBoxes, Anchor Macro, Trigger Bot and Aim Assist" width="1920" height="1080">
+            <figcaption><strong>Combat, on right shift</strong><span>Menu · live capture</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-tags="render menu" data-title="Render tab — ESP, Chams and Post FX" data-reveal>
+            <img src="assets/screenshots/gui-render.webp" alt="Zoom Render tab showing Player ESP, Storage ESP, Block ESP, Item ESP, Chams, Motion Blur, Post FX and Capes" loading="lazy" width="1920" height="1080">
+            <figcaption><strong>Render tab</strong><span>Menu · 26 modules</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-tags="donut menu" data-title="Donut tab — the server-specific tools" data-reveal>
+            <img src="assets/screenshots/gui-donut.webp" alt="Zoom Donut tab with Chunk Finder, Spawner Order, RTP Base Finder, Netherite Finder, Anti Trap, Region Map and Anti Vanish" loading="lazy" width="1920" height="1080">
+            <figcaption><strong>Donut tab</strong><span>Menu · server tools</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-tags="menu" data-title="Main menu — the Zoom title screen" data-reveal>
+            <img src="assets/screenshots/mainmenu.webp" alt="Zoom client main menu with the custom animated swirl backdrop and Minecraft 1.21.11 Singleplayer" loading="lazy" width="1920" height="1080">
+            <figcaption><strong>The title screen</strong><span>Menu · custom backdrop</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item gallery-item--wide" data-tags="ingame" data-title="In-game on 1.21.11 — sunset over the practice map" data-reveal="scale">
+            <img src="assets/screenshots/ingame-island.webp" alt="Minecraft 1.21.11 running with the Zoom client at sunset over a floating practice map" loading="lazy" width="1920" height="1080">
+            <figcaption><strong>In-game · 1.21.11</strong><span>Live capture · sunset</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap cta-band__inner">
+        <div data-reveal>
+          <span class="eyebrow">Want to see more?</span>
+          <h2>The rest is<br><span class="gradient-text">in the client.</span></h2>
+          <p>Join the Discord for clips, setup help and the current licence details.</p>
+        </div>
+        <div class="cta-band__actions" data-reveal>
+          <a class="btn btn--primary" href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener">Buy now in Discord</a>
+          <a class="btn btn--ghost" href="features.html">Explore features</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand"><a class="brand" href="index.html"><img src="assets/logo.png" alt="" width="30" height="30">zoom<em>.</em></a><p>A Fabric client for Minecraft 1.21.11. Combat, movement, render and DonutSMP tools in one place.</p></div>
+        <div class="footer-col"><h5>Client</h5><a href="features.html">Features</a><a href="gallery.html">Gallery</a><a href="pricing.html">Pricing</a></div>
+        <div class="footer-col"><h5>Support</h5><a href="faq.html">FAQ</a><a href="https://discord.gg/vNaJJBzujt" target="_blank" rel="noopener">Discord</a></div>
+        <div class="footer-col"><h5>Version</h5><a href="faq.html">1.21.11 only</a><a href="faq.html">No 1.8 build</a></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year>2026</span> Zoom. All rights reserved.</span><span class="disclaimer">Not affiliated with Mojang, Microsoft or DonutSMP. Minecraft is a trademark of Mojang AB.</span></div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Screenshot preview">
+    <button class="lightbox__close" type="button" aria-label="Close preview">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Previous screenshot">←</button>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Next screenshot">→</button>
+    <figure>
+      <img src="assets/screenshots/gui-combat.webp" alt="Zoom client screenshot">
+      <figcaption><strong>Zoom client</strong><span>1 / 4</span></figcaption>
+    </figure>
+  </dialog>
+</body>
+</html>

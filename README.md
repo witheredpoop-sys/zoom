@@ -9,7 +9,7 @@ Static HTML, CSS and vanilla JavaScript. No build step.
 - `index.html` — hero, features, DonutSMP, setup, pricing preview, FAQ
 - `features.html` — the full module walkthrough
 - `gallery.html` — real captures from the client, with filters and a lightbox
-- `pricing.html` — one-time licence and what happens after you buy
+- `pricing.html` — $20/month or $40 lifetime and what happens after you buy
 - `faq.html` — setup, version and licence answers
 - `404.html` — custom GitHub Pages not-found page
 

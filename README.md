@@ -2,6 +2,8 @@
 
 The official site for the Zoom client — a Fabric client for Minecraft 1.21.11.
 
+Live: <https://witheredpoop-sys.github.io/zoom/>
+
 Static HTML, CSS and vanilla JavaScript. No build step.
 
 ## Pages

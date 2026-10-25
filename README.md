@@ -8,15 +8,23 @@ Static HTML, CSS and vanilla JavaScript. No build step.
 
 ## Pages
 
-- `index.html` — hero, features, DonutSMP, setup, pricing preview, FAQ
+- `index.html` — hero, what's new, features, DonutSMP, setup, free download, FAQ
 - `features.html` — the full module walkthrough
 - `gallery.html` — real captures from the client, with filters and a lightbox
-- `pricing.html` — $20/month or $40 lifetime and what happens after you buy
-- `faq.html` — setup, version and licence answers
+- `download.html` — the free Windows MSI, requirements and install steps
+- `faq.html` — setup, version and free-download answers
 - `404.html` — custom GitHub Pages not-found page
 
-Every **Buy now** button opens the Discord invite:
-<https://discord.gg/vNaJJBzujt>
+## Download
+
+Zoom is free. The download button serves
+`download/ZoomClient-Setup-1.0.0.msi`, a per-user Windows installer built with
+`jpackage` that contains the obfuscated launcher and the obfuscated client jar.
+There is no key, account or checkout.
+
+The MSI is 61 MB and must stay under GitHub's 100 MB per-file limit. If a future
+build grows past that, publish it as a GitHub Release and point the download
+button at the release asset instead of committing the file.
 
 ## Screenshots
 

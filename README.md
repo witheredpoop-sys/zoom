@@ -2,6 +2,8 @@
 
 The official site for the Zoom client — a Fabric client for Minecraft 1.21.11.
 
+**Download:** [Zoom Client 1.0.1 for Windows](https://github.com/witheredpoop-sys/zoom/releases/latest) · [Website](https://witheredpoop-sys.github.io/zoom/download.html)
+
 Live: <https://witheredpoop-sys.github.io/zoom/>
 
 Static HTML, CSS and vanilla JavaScript. No build step.
@@ -22,9 +24,10 @@ Zoom is free. The download button serves
 `jpackage` that contains the obfuscated launcher and the obfuscated client jar.
 There is no key, account or checkout.
 
-The MSI is 61 MB and must stay under GitHub's 100 MB per-file limit. If a future
-build grows past that, publish it as a GitHub Release and point the download
-button at the release asset instead of committing the file.
+The MSI is 61 MB and must stay under GitHub's 100 MB per-file limit. The same
+installer is attached to the [v1.0.1 GitHub Release](https://github.com/witheredpoop-sys/zoom/releases/latest),
+which is the mirror the download page offers. If a future build grows past the
+100 MB limit, drop the committed copy and serve only the release asset.
 
 ## Screenshots
 

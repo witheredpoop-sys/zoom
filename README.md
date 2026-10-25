@@ -18,7 +18,7 @@ Static HTML, CSS and vanilla JavaScript. No build step.
 ## Download
 
 Zoom is free. The download button serves
-`download/ZoomClient-Setup-1.0.0.msi`, a per-user Windows installer built with
+`download/ZoomClient-Setup-1.0.1.msi`, a per-user Windows installer built with
 `jpackage` that contains the obfuscated launcher and the obfuscated client jar.
 There is no key, account or checkout.
 
